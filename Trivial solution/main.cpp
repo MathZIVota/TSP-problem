@@ -1,14 +1,12 @@
 #include"TSP.hpp"
-using namespace std;
 
 int main()
 {
-  vector<pair<double,double>> vert;
-  int N = input_func(vert);
-  cout << "Out:\n";
-  for (auto v: vert){
-    cout << v.first << " " << v.second << endl;
-  }
+  vector<vertex> V;
+  int N = input_func(V);
+
+  Solution(V);
+
   cout << "End\n";
   return 0;
 }

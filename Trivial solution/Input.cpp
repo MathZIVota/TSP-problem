@@ -1,13 +1,13 @@
 #include"TSP.hpp"
 #include<fstream>
 
-int input_func(vector<pair<double,double>>&vertex){
+int input_func(vector<vertex>&V){
   int N;
-  double x,y; 
+  vertex W; 
   cin >> N;
   for (size_t i=0; i<N; i++){
-    cin >> x >> y;
-    vertex.push_back(make_pair(x,y));
+    cin >> W.x >> W.y;
+    V.push_back(W);
   }
   return N;
 }
